@@ -1,11 +1,11 @@
 # robots.txt for OFFICINA IURIS
-# https://jacksparrows0701-maker.github.io/officinaiuris
+# https://officinaiuris.github.io
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://jacksparrows0701-maker.github.io/officinaiuris/sitemap.xml
+Sitemap: https://officinaiuris.github.io/sitemap.xml
 
 # Disallow admin pages (if any)
 Disallow: /admin/
