@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artikel Hukum — OFFICINA IURIS</title>
+<meta name="description" content="Artikel edukasi hukum seputar Pengadilan Agama, cerai, waris, isbat nikah, dan nafkah dari OFFICINA IURIS, Bandung.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://officinaiuris.github.io/blog.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://officinaiuris.github.io/blog.html">
+<meta property="og:title" content="Artikel Hukum — OFFICINA IURIS">
+<meta property="og:description" content="Artikel edukasi hukum seputar Pengadilan Agama, cerai, waris, isbat nikah, dan nafkah.">
+<meta property="og:image" content="https://officinaiuris.github.io/Logo/Logo.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-hero {
+    padding: 140px 0 80px;
+    background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
+    text-align: center;
+  }
+  .page-hero h1 { margin-bottom: 16px; }
+  .page-hero p { max-width: 560px; margin: 0 auto; font-size: 1.05rem; }
+
+  .blog-section { padding: 80px 0 120px; }
+
+  .blog-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+  .blog-filters button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid var(--gray-200);
+    border-radius: 100px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--gray-500);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .blog-filters button:hover,
+  .blog-filters button.active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--white);
+  }
+
+  .blog-list { display: flex; flex-direction: column; gap: 24px; }
+
+  .blog-card-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 32px;
+    padding: 32px;
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-100);
+    transition: var(--transition);
+    color: inherit;
+  }
+  .blog-card-row:hover {
+    border-color: var(--gold);
+    transform: translateX(4px);
+  }
+
+  .blog-date {
+    text-align: center;
+    padding: 16px;
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+  }
+  .blog-date .day {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+  }
+  .blog-date .month {
+    font-size: 0.8rem;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .blog-content .blog-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(201,162,39,0.1);
+    color: var(--gold-dark);
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .blog-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    font-family: var(--font-body);
+    font-weight: 600;
+  }
+  .blog-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .blog-content .read-more {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .blog-content .read-more:hover { gap: 10px; }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="Logo/Logo.png" alt="OFFICINA IURIS" class="logo-img">
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html#layanan">Layanan</a></li>
+      <li><a href="index.html#tentang">Tentang</a></li>
+      <li><a href="index.html#alasan">Keunggulan</a></li>
+      <li><a href="blog.html" class="active">Artikel</a></li>
+    </ul>
+    <a href="index.html#konsultasi" class="nav-cta">Konsultasi Gratis</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-tag">Artikel Hukum</span>
+    <h1>Edukasi hukum seputar Pengadilan Agama</h1>
+    <p>Kumpulan tulisan kami untuk membantu Anda memahami proses hukum di Pengadilan Agama dengan bahasa yang sederhana.</p>
+  </div>
+</section>
+
+<!-- BLOG LIST -->
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-filters">
+      <button class="active" data-cat="semua">Semua</button>
+      <button data-cat="keluarga">Hukum Keluarga</button>
+      <button data-cat="waris">Waris</button>
+      <button data-cat="nikah">Isbat Nikah</button>
+    </div>
+
+    <div class="blog-list">
+      <a href="blog-post.html" class="blog-card-row" data-cat="keluarga">
+        <div class="blog-date">
+          <span class="day">10</span>
+          <span class="month">Jul 2026</span>
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">Hukum Keluarga</span>
+          <h3>Perbedaan Cerai Gugat dan Cerai Talak di Pengadilan Agama</h3>
+          <p>Memahami dua jalur perceraian dalam hukum Islam di Indonesia beserta konsekuensi hukumnya masing-masing.</p>
+          <span class="read-more">Baca selengkapnya →</span>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="blog-card-row" data-cat="waris">
+        <div class="blog-date">
+          <span class="day">24</span>
+          <span class="month">Jun 2026</span>
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">Waris</span>
+          <h3>Cara Mengurus Waris Menurut Hukum Islam</h3>
+          <p>Langkah-langkah pengurusan pembagian waris melalui Pengadilan Agama beserta dokumen yang diperlukan.</p>
+          <span class="read-more">Baca selengkapnya →</span>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="blog-card-row" data-cat="nikah">
+        <div class="blog-date">
+          <span class="day">15</span>
+          <span class="month">Jun 2026</span>
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">Isbat Nikah</span>
+          <h3>Kapan Isbat Nikah Diperlukan?</h3>
+          <p>Penjelasan kapan pengesahan nikah melalui Pengadilan Agama menjadi kebutuhan hukum yang mendesak.</p>
+          <span class="read-more">Baca selengkapnya →</span>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="blog-card-row" data-cat="keluarga">
+        <div class="blog-date">
+          <span class="day">05</span>
+          <span class="month">Jun 2026</span>
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">Nafkah</span>
+          <h3>Hak Nafkah Iddah dan Cara Menuntutnya</h3>
+          <p>Penjelasan hak nafkah bagi perempuan setelah perceraian dan langkah hukum di Pengadilan Agama.</p>
+          <span class="read-more">Baca selengkapnya →</span>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="blog-card-row" data-cat="keluarga">
+        <div class="blog-date">
+          <span class="day">28</span>
+          <span class="month">Mei 2026</span>
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">Hukum Keluarga</span>
+          <h3>Dokumen yang Diperlukan untuk Cerai di Pengadilan Agama</h3>
+          <p>Panduan lengkap persiapan dokumen gugatan cerai agar proses persidangan berjalan lancar tanpa hambatan.</p>
+          <span class="read-more">Baca selengkapnya →</span>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="blog-card-row" data-cat="waris">
+        <div class="blog-date">
+          <span class="day">18</span>
+          <span class="month">Mei 2026</span>
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">Waris</span>
+          <h3>Perbedaan Waris Menurut Hukum Islam dan Hukum Perdata</h3>
+          <p>Mengenal dua sistem hukum waris yang berlaku di Indonesia dan bagaimana pengaruhnya terhadap pembagian harta.</p>
+          <span class="read-more">Baca selengkapnya →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/6285119973606" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
